@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <%- include('components/head.ejs')%>
 
     <title><%= title %></title>
 </head>
 <body>
-    <%- include('components/navigation')%>
-    <h1>Hola Mundo!</h1>
+<%- include('components/navigation') %>
+
+    <header class="header-custom">
+        <div class="container">
+            <h2>📺 Series Destacadas de la Semana</h2>
+            <p>Aquí verás varias recomendaciones de tus expertos en series para que las empieces a ver o vuelvas a darles un vistazo.</p>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="card-container">
+
+            <!-- Card 1 -->
+            <div class="card card-custom">
+                <img src="/friends.jpg" class="card-img-top" alt="Serie 1">
+                <div class="card-body">
+                    <h5 class="card-title">Friends</h5>
+                    <p class="card-text">Un clasico de las sitcoms donde 6 amigos de New York pasan miles de aventuras.</p>
+                    <a href="https://play.max.com/show/52dae4c7-2ab1-4bb9-ab1c-8100fd54e2f9" class="btn btn-primary">Max</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card card-custom">
+                <img src="/peakyBlinders.jpg" class="card-img-top" alt="Serie 2">
+                <div class="card-body">
+                    <h5 class="card-title">Peaky Blinders</h5>
+                    <p class="card-text">Una serie que te llevara al Birmingham del siglo XX, donde seguirás a Thomas Shelby el lider de una pandilla.</p>
+                    <a href="https://www.netflix.com/title/80002479" class="btn btn-primary">Netflix</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card card-custom">
+                <img src="/DanDanDan.jpg" class="card-img-top" alt="Serie 3">
+                <div class="card-body">
+                    <h5 class="card-title">DanDanDan</h5>
+                    <p class="card-text">Anime estilo shonen donde seguiremos a dos jovenes que pelean en contra de aliens y maldiciones.</p>
+                    <a href="https://www.netflix.com/title/81736884" class="btn btn-primary">Netflix</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>

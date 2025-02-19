@@ -4,11 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <%- include('components/head.ejs')%>
 
     <title><%= title %></title>
 </head>
 <body>
     <%- include('components/navigation')%>
-    <h1>Hola Mundo!</h1>
+    <header class="header-custom">
+        <div class="container">
+            <h2>📺 Estrenos de la Semana</h2>
+            <p>Aquí verás las series nuevas o aquellas que acaban de estrenar una temporada nueva para que las veas antes que nadie.</p>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="card-container">
+
+            <!-- Card 1 -->
+            <div class="card card-custom">
+                <img src="/tlou2.webp" class="card-img-top" alt="Serie 3">
+                <div class="card-body">
+                    <h5 class="card-title">(Próximamente) The last of us temporada 2</h5>
+                    <p class="card-text">Este abril disfrutaremos de la segunda parte de la historia de Joel y Ellie pero con un salto temporal con nuevos desafíos que les afronta el destino.</p>
+                    <a href="https://play.max.com/show/93ba22b1-833e-47ba-ae94-8ee7b9eefa9a" class="btn btn-primary">Max</a>
+                </div>
+            </div>
+
+            <div class="card card-custom">
+                <img src="/cobraKai.webp" class="card-img-top" alt="Serie 1">
+                <div class="card-body">
+                    <h5 class="card-title">Cobra Kai Temporada final</h5>
+                    <p class="card-text">El desenlace donde podremos ver el final del Sekai Tai Kai y tal vez veamos a nuestros protagonistas como los futuros campeones. </p>
+                    <a href="https://www.netflix.com/title/81002370" class="btn btn-primary">Netflix</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card card-custom">
+                <img src="/whiteLotus.jpg" class="card-img-top" alt="Serie 2">
+                <div class="card-body">
+                    <h5 class="card-title">The White Lotus Temporada 3</h5>
+                    <p class="card-text">Miniserie original de HBO que ofrece una sátira social a través de los empleados y huéspedes de un aparentemente idílico resort.</p>
+                    <a href="https://play.max.com/show/14f9834d-bc23-41a8-ab61-5c8abdbea505" class="btn btn-primary">Max</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+
+
+        </div>
+    </div>
 </body>
 </html>

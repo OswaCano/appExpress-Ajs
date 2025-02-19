@@ -1,0 +1,173 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cccccc;
+}
+
+/* Header con degradado */
+.header-custom {
+    background: linear-gradient(135deg, #571100 0%, #5c10af 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header-custom h1 {
+    font-weight: bold;
+    color: #f89a2f;
+}
+.header-custom h2 {
+    font-weight: bold;
+    color: #f8bf2f;
+}
+.header-custom h3 {
+    font-weight: bold;
+    color: #f8de65;
+}
+
+.header-custom p {
+    font-size: 1.2rem;
+}
+
+/* Estilo específico para este header */
+.header-custom.fullscreen {
+    height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #491100 0%, #4b0d93 100%); /* Fondo con degradado */
+    color: white;
+    padding: 20px;
+}
+
+/* Mantener los estilos de logo y texto */
+.header-custom.fullscreen .logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-custom.fullscreen h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.header-custom.fullscreen h2 {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.header-custom.fullscreen h3 {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 10px auto;
+    font-style: italic;
+}
+
+
+/* Estilos para las cards */
+.card-custom {
+    width: 18rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+/* Contenedor flexible para las cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Estilo del logo */
+.logo {
+    width: 150px;  /* Ajusta el tamaño según lo necesites */
+    height: 150px;
+    border-radius: 50%;  /* Hace que sea completamente circular */
+    object-fit: cover;  /* Ajusta la imagen dentro del círculo sin deformarla */
+    border: 4px solid #3d0000;  /* Borde con color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra elegante */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover para animación */
+.logo:hover {
+    transform: scale(1.1);  /* Hace que el logo crezca un poco al pasar el mouse */
+}
+
+/* Estilo del Footer */
+.footer {
+    background-color: #000; /* Fondo negro */
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para el texto del About Us */
+.footer-about {
+    font-size: 1.2rem;
+}
+
+/* Contenedor de los iconos */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilo de los iconos */
+.footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+    color: #00307c; /* Cambia de color al pasar el mouse */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Acomoda los botones en columna */
+    align-items: center; /* Centra los botones */
+    gap: 15px; /* Espaciado entre botones */
+    margin-top: 20px;
+}
+
+/* Ajuste de los botones */
+.buttons .btn {
+    width: 80%; /* Abarcan más los lados */
+    max-width: 400px; /* Límite de ancho para pantallas grandes */
+    padding: 15px; /* Aumenta el tamaño del botón */
+    font-size: 1.2rem; /* Texto más grande */
+    text-align: center;
+}
